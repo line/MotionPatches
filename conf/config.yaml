@@ -1,0 +1,35 @@
+exp_name: exp1
+checkpoints_dir: ./checkpoints/${exp_name}/${dataset.dataset_name}
+
+hydra:
+  run:
+    dir: ./checkpoints/${exp_name}/${dataset.dataset_name}
+
+defaults:
+  - _self_
+  - dataset: HumanML3D
+
+preprocess:
+  padding: true
+  use_kinematic: true
+
+model:
+  motion_encoder: vit_base_patch16_224_in21k
+  text_encoder: distilbert-base-uncased
+
+train:
+  batch_size: 128
+  epoch: 50
+  optimizer:
+    motion_lr: 1.0e-05
+    text_lr: 1.0e-05
+    head_lr: 1.0e-05
+  train_motion_encoder: true
+  train_text_encoder: true
+  motion_encoder_pretrained: true
+  patch_size: 16
+  seed: 42
+
+eval:
+  eval_train: false
+  use_best_model: true

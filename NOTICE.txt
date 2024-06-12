@@ -1,0 +1,13 @@
+### Open Source Software Notice ###
+
+This product from LY Corporation contains the open source software or third-party software listed below, to which the terms in the LICENSE file in this repository do not apply.
+Please refer to the licences of the respective software repositories for the terms and conditions of their use.
+
+hydra (MIT License)
+https://github.com/facebookresearch/hydra
+
+transformers (Apache License 2.0)
+https://github.com/huggingface/transformers
+
+pytorch-image-models (Apache License 2.0)
+https://github.com/huggingface/pytorch-image-models
