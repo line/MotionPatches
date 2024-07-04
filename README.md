@@ -71,6 +71,8 @@ Evaluate the model with KIT-ML via retrieval:
 python scripts/test.py dataset=KIT-ML exp_name=pretrained
 ```
 
+Using `scripts/test_batch.py` can get the result of small batches with 32 samples.
+
 ## Training
 Train the model with HumanML3D:
 ```bash
@@ -92,6 +94,8 @@ Evaluate the model with KIT-ML via retrieval:
 ```bash
 python scripts/test.py dataset=KIT-ML
 ```
+
+Using `scripts/test_batch.py` can get the result of small batches with 32 samples.
 
 ## Citation
 
